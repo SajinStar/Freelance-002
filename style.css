@@ -193,7 +193,7 @@
 
 .cardSection h5 {
   text-align: center;
-  padding-top: 20px;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -203,7 +203,7 @@
   height: 3px;
   position: absolute;
   background-color: #f77930;
-  top: 8%;
+  bottom: 5px;
   left: 49%;
 }
 
@@ -217,10 +217,13 @@
   border-style: solid solid solid solid;
   border-color: #b0a986 #b0a986 #b0a986 #b0a986;
   border-radius: 0 0 0 0;
+  -webkit-box-shadow: 0 4px 10px 0 #d8cccc;
+          box-shadow: 0 4px 10px 0 #d8cccc;
   overflow: hidden;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
+
 
 footer {
   background-color: #f0f0f0;
@@ -396,5 +399,20 @@ footer .container .sec4 p {
   footer .container .sec2 {
     padding-left: 30px;
   }
+
+.cardSection .firstCard .card-content p {
+  text-align: center;
+  margin: 5px 0px 5px 0;
+}
+
+.cardSection .firstCard .card-content h3 {
+  text-align: center;
+}
+
+.cardSection .firstCard .card-content .cardReadBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
 }
 /*# sourceMappingURL=style.css.map */
