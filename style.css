@@ -50,6 +50,10 @@
   color: #e6b70a !important;
 }
 
+.mySwiper1 {
+  height: calc(100vh - 98px) !important;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -103,9 +107,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-flex: 6;
-      -ms-flex: 6;
-          flex: 6;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  position: relative;
 }
 
 .sliderContent .SliderContentImg img {
@@ -113,6 +118,16 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.sliderContent .underline::after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  bottom: 75%;
+  left: 47%;
+  background-color: white;
 }
 
 .sliderContent h5 {
@@ -157,6 +172,54 @@
     font-size: 30px;
     font-weight: 400;
   }
+}
+
+.dilogueBox {
+  background-color: #323232;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.dilogueBox h1 {
+  color: #e6b70a !important;
+  padding: 20px 0;
+  letter-spacing: 2px;
+}
+
+.dilogueBox p {
+  color: #a4a4a4 !important;
+  padding-bottom: 10px;
+}
+
+.cardSection h5 {
+  text-align: center;
+  padding-top: 20px;
+  position: relative;
+}
+
+.cardSection h5::after {
+  content: "";
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  background-color: #f77930;
+  top: 8%;
+  left: 49%;
+}
+
+.cardSection .firstCard {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  --bg-overlay-color: rgb(255, 255, 255);
+  --scale: 1;
+  border-width: 0 0 0 0;
+  border-style: solid solid solid solid;
+  border-color: #b0a986 #b0a986 #b0a986 #b0a986;
+  border-radius: 0 0 0 0;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 footer {
