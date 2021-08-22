@@ -155,7 +155,7 @@
   .cardSection {
       h5 {
           text-align: center;
-          padding-top: 20px;
+          padding: 20px 0;
           position: relative;
       }
       h5::after{
@@ -164,19 +164,32 @@
         height: 3px;
         position: absolute;
         background-color: rgb(247, 121, 48);
-        top: 8%;
+        bottom: 5px;
     left: 49%;
       }
       .firstCard {
           width: fit-content;
-        --bg-overlay-color: rgb(255, 255, 255);
-        --scale: 1;
-        border-width: 0 0 0 0;
-        border-style: solid solid solid solid;
-        border-color: rgba(176, 169, 134, 1) rgba(176, 169, 134, 1) rgba(176, 169, 134, 1) rgba(176, 169, 134, 1);
-        border-radius: 0 0 0 0;
-        box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%);
-        overflow: hidden;
-        transform: translateZ(0);
+          --bg-overlay-color: rgb(255, 255, 255);
+          --scale: 1;
+          border-width: 0 0 0 0;
+          border-style: solid solid solid solid;
+          border-color: rgba(176, 169, 134, 1) rgba(176, 169, 134, 1) rgba(176, 169, 134, 1) rgba(176, 169, 134, 1);
+          border-radius: 0 0 0 0;
+          box-shadow: 0 4px 10px 0 #d8cccc;
+          overflow: hidden;
+          transform: translateZ(0);
+          
+          .card-content {
+              p {
+                  text-align: center;
+                  margin: 5px 0px 5px 0;
+              }
+              h3 {
+                  text-align: center;
+              }
+              .cardReadBtn{
+                  display: flex;
+              }
+          }
       }
   }
