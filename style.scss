@@ -170,6 +170,11 @@
         bottom: 5px;
     left: 49%;
       }
+      .cardSectionMain {
+        .col {
+          margin-bottom: 20px;
+        }
+      }
       .firstCard {
           width: fit-content;
 
@@ -183,20 +188,297 @@
           overflow: hidden;
           transform: translateZ(0);
           
-          .card-content {
-              p {
-                  text-align: center;
-                  margin: 5px 0px 5px 0;
-              }
-              h3 {
-                  text-align: center;
-              }
-              .cardReadBtn{
-                  display: flex;
-              }
-          }
+          
       }
   }
+
+  .card-content {
+    p {
+        text-align: center;
+        margin: 5px 0px 5px 0;
+    }
+    h3 {
+        text-align: center;
+    }
+    .cardReadBtn{
+        display: flex;
+        justify-content: space-around;
+        p{
+          text-align: start;
+        }
+        h3 {
+          color: #F58144;
+        }
+    }
+    .readbtn {
+      display: flex;
+      align-items: center;
+      button {
+        background: #36b5cd;
+        color: white;
+        border: 0;
+        padding: 7px 16px;
+      }
+      button:hover{
+        background-color:#5dc0d4 ;
+        transition:ease all .5s;
+      }
+    }
+}
+
+.AdvisorBtn{
+  display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        background: #36b5cd;
+        color: white;
+        border: 0;
+        padding: 7px 10px;
+      }
+      button:hover{
+        background-color:#5dc0d4 ;
+        transition:ease all .5s;
+      }
+}
+
+.allCourseBtn{
+  display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      button {
+        background: #36b5cd;
+        color: white;
+        border: 0;
+        padding: 7px 16px;
+      }
+      button:hover{
+        background-color:#5dc0d4 ;
+        transition:ease all .5s;
+      }
+}
+
+
+.headingWithBorder {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  &::after {
+    content: "";
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    background-color: #f77930;
+    bottom: 5px;
+    left: 49%;
+  }
+}
+
+
+.teamSection {
+  .teamSectionMain {
+    margin: 25px 0px;
+  }
+  h5 {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    }
+     h5::after{
+      content: "";
+      width: 35px;
+      height: 3px;
+      position: absolute;
+      background-color: rgb(247, 121, 48);
+      bottom: 5px;
+    left: 49%;
+    }
+   .col-md-6 {
+    margin-bottom: 20px;
+}
+}
+.teamSectionCard {
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 0px 20px;
+  .teamSectionCardDetails {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #333333;
+    p {
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .teamSectionImg {
+      display: block;
+      text-align: end
+    }
+  }
+  img {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+}
+
+.slider2 {
+  height: 70vh;
+  position: relative;
+  margin: 5px 0px;
+  .mySwiper2 {
+    overflow: hidden;
+  }
+}
+.slider3 {
+  height: 60vh;
+  position: relative;
+  padding: 0px 40px;
+  margin-bottom: 10px;
+  .mySwiper3 {
+    overflow: hidden;
+  }
+}
+.academyInfoSection {
+  h3{
+    text-align: center;
+    color: rgb(255, 201, 4);
+    letter-spacing: 0.2em;
+    font-size: 20px;
+  }
+    h5 {
+      text-align: center;
+      padding: 20px 0;
+      position: relative;
+    }
+    h5::after{
+    content: "";
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(247, 121, 48);
+    bottom: 5px;
+    left: 49%;
+    }
+    .container{
+      display:flex ;
+      justify-content: center;
+      .row {
+        width: 85%;
+        flex-direction: column;
+        .col {
+          background-color: #f9f9f9;
+          margin: 5px 0;
+          padding: 5px 0px 0px 30px;
+        }
+      }
+    }
+}
+.formArea {
+  max-width: 800px;
+  margin: 0 auto;
+  input {
+    background: #dcdcdc;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+    padding-left: 10px;
+    color: black;
+    font-weight: 550;
+    margin: 10px;
+    outline: transparent;
+    &:hover {
+      background: #f2e3f8;
+    }
+    &:focus {
+      background: #f2e3f8;
+      border-bottom: 2px solid #fe6060 !important;
+    }
+  }
+  .col-md-12 {
+    text-align: center;
+    
+    textarea {
+      background: #dcdcdc;
+    border: 1px solid #dcdcdc;
+      max-width: 400px;
+      width: 100%;
+      padding: 20px;
+      margin:10px 10px;
+      outline: transparent;
+      color: black;
+      font-weight: 550;
+      &:hover {
+        background: #f2e3f8;
+      }
+      &:focus {
+        background: #f2e3f8;
+        border-bottom: 2px solid #fe6060 !important;
+      }
+    }
+    button {
+        background: #fe6060;
+        border: 1px solid #fe6060;
+        padding:8px 22px; 
+        color: white;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+  }
+}
+
+.card2Styles {
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  .details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    color: #333333;
+    p {
+      font-size: 14px;
+      font-weight: 400;
+    }
+    a {
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+      color: #333333;
+    }
+  }
+  img {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+}
+
+.Requirements {
+  p {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+
+  .card2Styles {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
 
   footer {
     background-color: #f0f0f0;

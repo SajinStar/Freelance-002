@@ -207,6 +207,10 @@
   left: 49%;
 }
 
+.cardSection .cardSectionMain .col {
+  margin-bottom: 20px;
+}
+
 .cardSection .firstCard {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -224,19 +228,373 @@
           transform: translateZ(0);
 }
 
-.cardSection .firstCard .card-content p {
+.card-content p {
   text-align: center;
   margin: 5px 0px 5px 0;
 }
 
-.cardSection .firstCard .card-content h3 {
+.card-content h3 {
   text-align: center;
 }
 
-.cardSection .firstCard .card-content .cardReadBtn {
+.card-content .cardReadBtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-content .cardReadBtn p {
+  text-align: start;
+}
+
+.card-content .cardReadBtn h3 {
+  color: #F58144;
+}
+
+.card-content .readbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-content .readbtn button {
+  background: #36b5cd;
+  color: white;
+  border: 0;
+  padding: 7px 16px;
+}
+
+.card-content .readbtn button:hover {
+  background-color: #5dc0d4;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+
+.AdvisorBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.AdvisorBtn button {
+  background: #36b5cd;
+  color: white;
+  border: 0;
+  padding: 7px 10px;
+}
+
+.AdvisorBtn button:hover {
+  background-color: #5dc0d4;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+
+.allCourseBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.allCourseBtn button {
+  background: #36b5cd;
+  color: white;
+  border: 0;
+  padding: 7px 16px;
+}
+
+.allCourseBtn button:hover {
+  background-color: #5dc0d4;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+
+.headingWithBorder {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.headingWithBorder::after {
+  content: "";
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  background-color: #f77930;
+  bottom: 5px;
+  left: 49%;
+}
+
+.teamSection .teamSectionMain {
+  margin: 25px 0px;
+}
+
+.teamSection h5 {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.teamSection h5::after {
+  content: "";
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  background-color: #f77930;
+  bottom: 5px;
+  left: 49%;
+}
+
+.teamSection .col-md-6 {
+  margin-bottom: 20px;
+}
+
+.teamSectionCard {
+  background: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0px 0px 20px;
+}
+
+.teamSectionCard .teamSectionCardDetails {
+  width: 100%;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  color: #333333;
+}
+
+.teamSectionCard .teamSectionCardDetails p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.teamSectionCard .teamSectionCardDetails .teamSectionImg {
+  display: block;
+  text-align: end;
+}
+
+.teamSectionCard img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.slider2 {
+  height: 70vh;
+  position: relative;
+  margin: 5px 0px;
+}
+
+.slider2 .mySwiper2 {
+  overflow: hidden;
+}
+
+.slider3 {
+  height: 60vh;
+  position: relative;
+  padding: 0px 40px;
+  margin-bottom: 10px;
+}
+
+.slider3 .mySwiper3 {
+  overflow: hidden;
+}
+
+.academyInfoSection h3 {
+  text-align: center;
+  color: #ffc904;
+  letter-spacing: 0.2em;
+  font-size: 20px;
+}
+
+.academyInfoSection h5 {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.academyInfoSection h5::after {
+  content: "";
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  background-color: #f77930;
+  bottom: 5px;
+  left: 49%;
+}
+
+.academyInfoSection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.academyInfoSection .container .row {
+  width: 85%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.academyInfoSection .container .row .col {
+  background-color: #f9f9f9;
+  margin: 5px 0;
+  padding: 5px 0px 0px 30px;
+}
+
+.formArea {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.formArea input {
+  background: #dcdcdc;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 0;
+  padding-left: 10px;
+  color: black;
+  font-weight: 550;
+  margin: 10px;
+  outline: transparent;
+}
+
+.formArea input:hover {
+  background: #f2e3f8;
+}
+
+.formArea input:focus {
+  background: #f2e3f8;
+  border-bottom: 2px solid #fe6060 !important;
+}
+
+.formArea .col-md-12 {
+  text-align: center;
+}
+
+.formArea .col-md-12 textarea {
+  background: #dcdcdc;
+  border: 1px solid #dcdcdc;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  margin: 10px 10px;
+  outline: transparent;
+  color: black;
+  font-weight: 550;
+}
+
+.formArea .col-md-12 textarea:hover {
+  background: #f2e3f8;
+}
+
+.formArea .col-md-12 textarea:focus {
+  background: #f2e3f8;
+  border-bottom: 2px solid #fe6060 !important;
+}
+
+.formArea .col-md-12 button {
+  background: #fe6060;
+  border: 1px solid #fe6060;
+  padding: 8px 22px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card2Styles {
+  background: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.card2Styles .details {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  color: #333333;
+}
+
+.card2Styles .details p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card2Styles .details a {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333333;
+}
+
+.card2Styles img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.Requirements p {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 340px) {
+  .card2Styles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 
 footer {
