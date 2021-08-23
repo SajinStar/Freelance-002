@@ -19,8 +19,8 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
          <div class="NavLogofx">
-             <img src="./assets/images/logo.webp" alt="">
-             <img src="./assets/images/Nav-title.webp" alt="">
+             <img class="logoImg" src="./assets/images/logo.webp" alt="">
+             <img class="logoContent" src="./assets/images/Nav-title.webp" alt="">
          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,23 +30,23 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Course</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#course">Course</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#">Experience</a>
+                <a class="nav-link" href="#experience">Experience</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#">Admissions</a>
+                <a class="nav-link" href="#admissions">Admissions</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#">hawks FX</a>
+                <a class="nav-link" href="#hawkFX">hawks FX</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a>
               </li>
             </ul>
           </div>
@@ -60,7 +60,7 @@
             Slider Start
     ========================= -->
 
-    <div class="swiper-container mySwiper mySwiper1">
+    <div class="swiper-container mySwiper mySwiper1" id="course">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
            <img src="./assets/images/slider-img-1.webp" alt="">
@@ -126,7 +126,7 @@
 <!-- ======================
             Card start
     ========================= -->
-<section class="cardSection">
+<section class="cardSection" id="about">
   <h5>Our Services</h5>
 <div class="container">
   <div class="row cardSectionMain">
@@ -289,7 +289,7 @@
              Team Section
       ========================== -->
 
-<section class="teamSection">
+<section class="teamSection" id="experience">
   <h5>Meet the team</h5>
   <div class="container">
     <div class="row teamSectionMain">
@@ -395,7 +395,7 @@
           second slider
      ========================= -->
 
-    <section class="slider2">
+    <section class="slider2" id="admissions">
       <div class="swiper-container mySwiper mySwiper2">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -453,7 +453,6 @@
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
 <!-- ======================
@@ -480,7 +479,7 @@
 <!-- =======================
         Academy info
       ======================== -->
-<section class="academyInfoSection">
+<section class="academyInfoSection" id="hawkFX">
  <h5>To attend our academy</h5>
  <div class="container">
    <div class="row">
@@ -612,7 +611,7 @@
             Footer
     ========================= -->
 
-    <footer>
+    <footer id="footer">
 
       <div class="container">
         <div class="row">

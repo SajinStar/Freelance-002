@@ -24,12 +24,6 @@
   text-align: end;
 }
 
-.navbar .navbar-collapse {
-  -webkit-box-flex: 7;
-      -ms-flex: 7;
-          flex: 7;
-}
-
 .navbar .navbar-collapse .navbar-nav {
   width: 100%;
   -webkit-box-pack: center;
@@ -39,7 +33,7 @@
 
 .navbar .navbar-collapse .navbar-nav a {
   color: #a4a4a4 !important;
-  padding-right: 1.5rem !important;
+  padding: 1.5rem 1rem;
 }
 
 .navbar .navbar-collapse .navbar-nav a:hover {
@@ -48,6 +42,34 @@
 
 .navbar .navbar-collapse .navbar-nav .active {
   color: #e6b70a !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .NavLogofx {
+    text-align: start !important;
+  }
+  .NavLogofx .logoImg {
+    width: 50px;
+  }
+  .NavLogofx .logoContent {
+    width: 180px;
+  }
+  .navbar-collapse .navbar-nav {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-collapse .navbar-nav a {
+    color: #a4a4a4 !important;
+    padding: .2rem 1rem !important;
+  }
+  .mySwiper1 {
+    height: calc(100vh - 59px) !important;
+  }
+  .slider3 {
+    height: 20vh !important;
+  }
 }
 
 .mySwiper1 {
@@ -139,6 +161,14 @@
   font-weight: 700;
 }
 
+.swiper-button-next {
+  color: #cccccc;
+}
+
+.swiper-button-prev {
+  color: #cccccc;
+}
+
 @media only screen and (max-width: 768px) {
   .sliderContent {
     left: 50%;
@@ -171,6 +201,15 @@
   .sliderContent h1 {
     font-size: 30px;
     font-weight: 400;
+  }
+  .cardSectionMain > .col {
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .cardSectionMain > .col {
+    margin-left: 7%;
   }
 }
 
