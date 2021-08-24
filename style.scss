@@ -63,6 +63,25 @@
   height: 20vh !important;
 }
 }
+@media only screen and (max-width:450px){
+  
+  .teamSectionCard {
+    flex-direction: column;
+    & > div:first-child {
+      text-align: center;
+    }
+  }
+
+}
+
+nav {
+  box-shadow: -10.50px -5.82px 17px 13px rgba(0,0,0,0.6);
+}
+
+.slider3  {
+  margin-top: 40px;
+}
+
 .mySwiper1 {
     height: calc(100vh - 98px) !important;
 }
@@ -164,17 +183,10 @@
       }
     }
     .cardSectionMain {
-     >.col {
-       margin-left: 20%;
+     >.col .firstCard {
+        margin: 0 auto;
       }
     }
-  }
-  @media only screen and (max-width:420px){
-    .cardSectionMain {
-      >.col {
-        margin-left: 7%;
-       }
-     }
   }
   .dilogueBox {
     background-color: #323232;
@@ -515,7 +527,6 @@
     flex-direction: column;
     text-align: center;
   }
-
 }
 
   footer {
@@ -666,3 +677,19 @@
 
     }
 
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-light .navbar-toggler {
+   color: rgba(0,0,0,.55);
+    border-color: gray;
+}
+
+.slider3 img {
+  border-radius: 4px;
+}
+
+section {
+  scroll-margin-top:100px
+}
