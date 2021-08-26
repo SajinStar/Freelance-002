@@ -79,8 +79,12 @@
       text-align: center;
     }
   }
+  .contactMail {
+    font-size: 18px !important;
+  }
 
 }
+
 
 nav {
   box-shadow: -10.50px -5.82px 17px 13px rgba(0,0,0,0.6);
@@ -161,8 +165,8 @@ nav {
     // }
     .homePlayBtn {
       color: white;
-      font-weight: 800;
-      font-size: 26px;
+      font-weight: 600;
+      font-size: 20px;
       border: 1px solid white;
       background: transparent;
       letter-spacing: 3px;
@@ -544,6 +548,14 @@ nav {
     flex-direction: column;
     text-align: center;
   }
+  .cardSection .firstCard {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .logoImg {
+    width: 220px !important;
+  }
 }
 
   footer {
@@ -558,12 +570,13 @@ nav {
       .sec1 {
         .flex {
           display: flex;
+          justify-content: center;
         }
         .title {
           width: 270px;
         }
         .logo2 {
-          width: 70px;
+          width: 300px;
         }
         p {
           margin-top: 30px;
@@ -709,4 +722,35 @@ nav {
 
 section {
   scroll-margin-top:100px
+}
+
+#Services2 ,#Team2,#exp1,#carrer2 {
+  scroll-margin-top:90px ;
+}
+
+.emailContact { 
+  .headingWithBorder::after {
+    bottom: 12px;
+    left: 48.5%;
+  }
+  & > div {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #e6b70a !important;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+} }
+
+footer {
+  background: #323232 !important;
+  & * {
+    color: white !important;
+  }
 }
