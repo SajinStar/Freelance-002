@@ -14,9 +14,12 @@
  top: 0;
  z-index: 11;
  .NavLogofx {
-     flex: 5;
      display: block;
      text-align: end;
+    //  flex: 5;
+     .logoImg {
+      width: 300px;
+    }
  }
  .navbar-collapse {
     .navbar-nav {
@@ -36,15 +39,20 @@
  }
    
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:2500px){
+  .NavLogofx{
+    flex: 1;
+   }
+}
+@media only screen and (max-width:1000px){
   .NavLogofx{
     text-align: start !important;
-      .logoImg {
-        width: 50px;
-      }
-      .logoContent {
-        width: 180px;
-      }
+      // .logoImg {
+      //   width: 50px;
+      // }
+      // .logoContent {
+      //   width: 180px;
+      // }
    }
    .navbar-collapse {
     .navbar-nav {
@@ -147,9 +155,18 @@ nav {
       h5 {
         font-size: 26px;
     }
-    h1 {
-        font-size: 50px;
-        font-weight: 700;
+    // h1 {
+    //     font-size: 50px;
+    //     font-weight: 700;
+    // }
+    .homePlayBtn {
+      color: white;
+      font-weight: 800;
+      font-size: 26px;
+      border: 1px solid white;
+      background: transparent;
+      letter-spacing: 3px;
+      padding: 0px 10px;
     }
   }
   .swiper-button-next {
@@ -328,7 +345,7 @@ nav {
 
 .teamSection {
   .teamSectionMain {
-    margin: 25px 0px;
+    margin: 25px 0px 10vh 0px;
   }
   h5 {
     text-align: center;

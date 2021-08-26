@@ -17,11 +17,12 @@
 }
 
 .navbar .NavLogofx {
-  -webkit-box-flex: 5;
-      -ms-flex: 5;
-          flex: 5;
   display: block;
   text-align: end;
+}
+
+.navbar .NavLogofx .logoImg {
+  width: 300px;
 }
 
 .navbar .navbar-collapse .navbar-nav {
@@ -44,15 +45,17 @@
   color: #e6b70a !important;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 2500px) {
+  .NavLogofx {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .NavLogofx {
     text-align: start !important;
-  }
-  .NavLogofx .logoImg {
-    width: 50px;
-  }
-  .NavLogofx .logoContent {
-    width: 180px;
   }
   .navbar-collapse .navbar-nav {
     width: 100%;
@@ -177,9 +180,14 @@ nav {
   font-size: 26px;
 }
 
-.sliderContent h1 {
-  font-size: 50px;
-  font-weight: 700;
+.sliderContent .homePlayBtn {
+  color: white;
+  font-weight: 800;
+  font-size: 26px;
+  border: 1px solid white;
+  background: transparent;
+  letter-spacing: 3px;
+  padding: 0px 10px;
 }
 
 .swiper-button-next {
@@ -397,7 +405,7 @@ nav {
 }
 
 .teamSection .teamSectionMain {
-  margin: 25px 0px;
+  margin: 25px 0px 10vh 0px;
 }
 
 .teamSection h5 {
