@@ -8,8 +8,6 @@ var swiper1 = new Swiper(".mySwiper1", {
   pagination: {
     el: ".swiper-pagination",
   },
-  mousewheel: true,
-  keyboard: true,
 });
 
 // var swiper2 = new Swiper(".mySwiper2", {
@@ -43,6 +41,6 @@ window.addEventListener("DOMContentLoaded", () => {
     },
     autoplay: true,
     disableOnInteraction: true,
-    speed: 300,
+    speed: 1000,
   });
 });

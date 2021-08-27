@@ -85,6 +85,9 @@
   .teamSectionCard > div:first-child {
     text-align: center;
   }
+  .contactMail {
+    font-size: 18px !important;
+  }
 }
 
 nav {
@@ -182,8 +185,8 @@ nav {
 
 .sliderContent .homePlayBtn {
   color: white;
-  font-weight: 800;
-  font-size: 26px;
+  font-weight: 600;
+  font-size: 20px;
   border: 1px solid white;
   background: transparent;
   letter-spacing: 3px;
@@ -657,6 +660,15 @@ nav {
             flex-direction: column;
     text-align: center;
   }
+  .cardSection .firstCard {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .logoImg {
+    width: 220px !important;
+  }
 }
 
 footer {
@@ -676,6 +688,9 @@ footer .container .sec1 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .container .sec1 .title {
@@ -683,7 +698,7 @@ footer .container .sec1 .title {
 }
 
 footer .container .sec1 .logo2 {
-  width: 70px;
+  width: 300px;
 }
 
 footer .container .sec1 p {
@@ -851,5 +866,37 @@ footer .container .sec4 p {
 
 section {
   scroll-margin-top: 100px;
+}
+
+#Services2, #Team2, #exp1, #carrer2 {
+  scroll-margin-top: 90px;
+}
+
+.emailContact .headingWithBorder::after {
+  bottom: 12px;
+  left: 48.5%;
+}
+
+.emailContact > div {
+  text-align: center;
+}
+
+.emailContact > div a {
+  text-decoration: none;
+  color: #e6b70a !important;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 25px;
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+  background: #323232 !important;
+}
+
+footer * {
+  color: white !important;
 }
 /*# sourceMappingURL=style.css.map */
