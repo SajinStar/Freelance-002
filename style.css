@@ -234,9 +234,13 @@ nav {
     font-size: 30px;
     font-weight: 400;
   }
-  .cardSectionMain > .col .firstCard {
+  .cardSectionMain > .col-md-4 .firstCard {
     margin: 0 auto;
   }
+}
+
+.cardSectionMain > .col-md-4 {
+  height: 100%;
 }
 
 .dilogueBox {
@@ -293,9 +297,21 @@ nav {
           transform: translateZ(0);
 }
 
+.cardSection .firstCard img {
+  width: 100%;
+}
+
+.card-content {
+  padding: 0 15px;
+}
+
 .card-content p {
   text-align: center;
   margin: 5px 0px 5px 0;
+}
+
+.card-content h4 {
+  text-align: center;
 }
 
 .card-content h3 {
@@ -432,6 +448,7 @@ nav {
 }
 
 .teamSectionCard {
+  height: 100%;
   background: #f9f9f9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,6 +476,13 @@ nav {
 .teamSectionCard .teamSectionCardDetails p {
   font-size: 14px;
   font-weight: 400;
+}
+
+.teamSectionCard .teamSectionCardDetails p a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
 }
 
 .teamSectionCard .teamSectionCardDetails .teamSectionImg {

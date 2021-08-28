@@ -204,11 +204,16 @@ nav {
       }
     }
     .cardSectionMain {
-     >.col .firstCard {
+     > .col-md-4 .firstCard {
         margin: 0 auto;
       }
     }
   }
+  .cardSectionMain {
+    >.col-md-4{
+      height: 100%;
+    }
+   }
   .dilogueBox {
     background-color: #323232;
     text-align: center;
@@ -259,14 +264,20 @@ nav {
           overflow: hidden;
           transform: translateZ(0);
           
-          
+          img {
+            width: 100%;
+          }
       }
   }
 
   .card-content {
+    padding: 0 15px;
     p {
         text-align: center;
         margin: 5px 0px 5px 0;
+    }
+    h4{
+      text-align: center;
     }
     h3 {
         text-align: center;
@@ -370,6 +381,7 @@ nav {
 }
 }
 .teamSectionCard {
+  height: 100%;
   background: #f9f9f9;
   display: flex;
   justify-content: center;
@@ -384,7 +396,14 @@ nav {
     p {
       font-size: 14px;
       font-weight: 400;
+      a{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+      }
     }
+    
     .teamSectionImg {
       display: block;
       text-align: end
