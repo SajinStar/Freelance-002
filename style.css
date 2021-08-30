@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@font-face {
+  font-family: 'Adobe Carlson';
+  src: url(./assets/fonts/ACaslonPro-Bold.otf) format("otf");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro 35 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir LT Pro 35 Light"), url("./assets/fonts/AvenirLTProLight.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -251,13 +264,16 @@ nav {
 
 .dilogueBox h1 {
   color: #e6b70a !important;
-  padding: 20px 0;
+  padding: 25px 0;
   letter-spacing: 2px;
+  font-family: 'Adobe Carlson';
 }
 
 .dilogueBox p {
   color: #a4a4a4 !important;
   padding-bottom: 10px;
+  font-size: 18px;
+  font-family: "Avenir LT Pro 35 Light";
 }
 
 .cardSection h5 {
@@ -273,7 +289,7 @@ nav {
   position: absolute;
   background-color: #f77930;
   bottom: 5px;
-  left: 49%;
+  left: 48.6%;
 }
 
 .cardSection .cardSectionMain .col {
@@ -308,6 +324,7 @@ nav {
 .card-content p {
   text-align: center;
   margin: 5px 0px 5px 0;
+  font-family: "Avenir LT Pro 35 Light";
 }
 
 .card-content h4 {
@@ -420,7 +437,7 @@ nav {
   position: absolute;
   background-color: #f77930;
   bottom: 5px;
-  left: 49%;
+  left: 48.6%;
 }
 
 .teamSection .teamSectionMain {
@@ -431,6 +448,8 @@ nav {
   text-align: center;
   padding: 20px 0;
   position: relative;
+  font-family: 'Adobe Carlson';
+  font-size: 25px;
 }
 
 .teamSection h5::after {
@@ -440,7 +459,7 @@ nav {
   position: absolute;
   background-color: #f77930;
   bottom: 5px;
-  left: 49%;
+  left: 48.6%;
 }
 
 .teamSection .col-md-6 {
@@ -473,16 +492,32 @@ nav {
   color: #333333;
 }
 
+.teamSectionCard .teamSectionCardDetails h6 {
+  font-family: "Avenir LT Pro 35 Light";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.teamSectionCard .teamSectionCardDetails h4 {
+  font-size: 18px;
+  color: #f77930;
+  font-family: 'EB Garamond', serif;
+}
+
 .teamSectionCard .teamSectionCardDetails p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
+  font-family: 'EB Garamond', serif;
+  color: #858585;
+  text-align: justify;
+  margin-top: 10px;
 }
 
 .teamSectionCard .teamSectionCardDetails p a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  color: black;
+  color: #858585;
 }
 
 .teamSectionCard .teamSectionCardDetails .teamSectionImg {
@@ -536,7 +571,7 @@ nav {
   position: absolute;
   background-color: #f77930;
   bottom: 5px;
-  left: 49%;
+  left: 48.6%;
 }
 
 .academyInfoSection .container {
@@ -922,5 +957,12 @@ footer {
 
 footer * {
   color: white !important;
+}
+
+.teamSectionCard > div:first-child img {
+  width: 160px;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

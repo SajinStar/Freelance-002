@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@font-face {
+  font-family: 'Adobe Carlson';
+  src: url(./assets/fonts/ACaslonPro-Bold.otf) format("otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+
+@font-face {
+  font-family: 'Avenir LT Pro 35 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Pro 35 Light'), url('./assets/fonts/AvenirLTProLight.woff') format('woff');
+  }
+  
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;   
 }
 
 .navbar {
@@ -220,13 +234,16 @@ nav {
     padding-bottom: 30px;
     h1{
         color: #e6b70a !important;
-        padding: 20px 0;
+        padding: 25px 0;
         letter-spacing: 2px;
+        font-family: 'Adobe Carlson';
     }
     p{
         color: #a4a4a4 !important;
         padding-bottom: 10px;
-      
+        font-size: 18px;
+        font-family: "Avenir LT Pro 35 Light"; 
+
     }
   }
 
@@ -244,7 +261,7 @@ nav {
         position: absolute;
         background-color: rgb(247, 121, 48);
         bottom: 5px;
-    left: 49%;
+        left: 48.6%;
       }
       .cardSectionMain {
         .col {
@@ -275,6 +292,7 @@ nav {
     p {
         text-align: center;
         margin: 5px 0px 5px 0;
+        font-family: "Avenir LT Pro 35 Light";
     }
     h4{
       text-align: center;
@@ -353,7 +371,7 @@ nav {
     position: absolute;
     background-color: #f77930;
     bottom: 5px;
-    left: 49%;
+    left: 48.6%;
   }
 }
 
@@ -366,6 +384,8 @@ nav {
     text-align: center;
     padding: 20px 0;
     position: relative;
+   font-family: 'Adobe Carlson';
+   font-size: 25px;
     }
      h5::after{
       content: "";
@@ -374,7 +394,7 @@ nav {
       position: absolute;
       background-color: rgb(247, 121, 48);
       bottom: 5px;
-    left: 49%;
+    left: 48.6%;
     }
    .col-md-6 {
     margin-bottom: 20px;
@@ -393,14 +413,28 @@ nav {
     flex-direction: column;
     padding: 10px;
     color: #333333;
+    h6  {
+      font-family: "Avenir LT Pro 35 Light";
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    h4 {
+      font-size: 18px;
+      color: #f77930;
+      font-family: 'EB Garamond', serif;
+    }
     p {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 400;
+      font-family: 'EB Garamond', serif;
+      color: #858585;
+      text-align: justify;
+      margin-top: 10px;
       a{
         text-decoration: none;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
-        color: black;
+        color: #858585;
       }
     }
     
@@ -451,7 +485,7 @@ nav {
     position: absolute;
     background-color: rgb(247, 121, 48);
     bottom: 5px;
-    left: 49%;
+    left: 48.6%;
     }
     .container{
       display:flex ;
@@ -772,4 +806,12 @@ footer {
   & * {
     color: white !important;
   }
+}
+
+.teamSectionCard {
+  & > div:first-child img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+  } 
 }
