@@ -44,3 +44,15 @@ window.addEventListener("DOMContentLoaded", () => {
     speed: 1000,
   });
 });
+
+var navbar = document.querySelector(".navbar");
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 150) {
+      navbar.style.position = "sticky";
+    } else {
+      navbar.style.position = "initial";
+    }
+  });
+});
