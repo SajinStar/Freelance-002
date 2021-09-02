@@ -727,6 +727,12 @@ nav {
       }
     }
 
+    @media only screen and (min-width: 1200px) {
+      .cardSection .cardSectionMain .firstCard {
+       min-height: 330px;
+     }
+    }
+
     @media only screen and (max-width: 1100px) {
       footer .container .sec1 .title {
         width: 250px;
@@ -812,6 +818,10 @@ footer {
   & > div:first-child img {
     width: 160px;
     height: 160px;
-    object-fit: cover;
+    object-fit: contain;
   } 
+}
+
+.navbar  {
+  transition: position 2s ease;
 }
