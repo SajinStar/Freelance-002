@@ -165,18 +165,15 @@ nav {
           width: 30px;
           height: 1px;
           position: absolute;
-          bottom: 75%;
-          left: 47%;
+          top: 40px;
+          left: 40%;
           background-color: rgb(255, 255, 255);
       }
 
       h5 {
         font-size: 26px;
     }
-    // h1 {
-    //     font-size: 50px;
-    //     font-weight: 700;
-    // }
+
     .homePlayBtn {
       color: white;
       font-weight: 600;
@@ -745,6 +742,9 @@ nav {
       footer .container .sec2 div {
         flex-direction: column;
       }
+      .contactMail {
+        font-size: 20px !important;
+      }
     }
     @media only screen and (max-width: 850px) {
       footer .container .sec1 .title {
@@ -762,6 +762,10 @@ nav {
 
       footer .container .sec2 {
         padding-left: 30px;
+      }
+
+      .emailContact .col-md-6:first-child {
+        border-right: 0 !important;
       }
 
     }
@@ -824,4 +828,22 @@ footer {
 
 .navbar  {
   transition: position 2s ease;
+}
+
+.copyRight {
+  font-size: 16px !important;
+}
+
+.emailContact {
+  .col-md-6,.col-md-12 {
+    h3 {
+      font-family: 'Adobe Carlson';
+      font-size: 24px;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+  .col-md-6:first-child {
+    border-right: 2px solid #f77930;
+  }
 }
